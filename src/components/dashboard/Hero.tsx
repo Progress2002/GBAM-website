@@ -27,7 +27,7 @@ const Hero = () => {
             <span className="text-gbam-primary">#</span>GBAM
           </Heading>
           <Text className="md:text-center text-2xl md:text-3xl font-bold text-white/90 mb-2 font-display">
-            Graffiti Basketball, Arts, and Music
+            Graffiti Basketball, and Music
           </Text>
           <Text className="md:text-center  text-lg md:text-xl font-medium text-white/80 mb-8 max-w-2xl">
             We're building a platform that uses the power of sports,
