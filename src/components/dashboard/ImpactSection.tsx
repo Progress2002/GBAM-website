@@ -40,7 +40,7 @@ const ImpactSection = () => {
   return (
     <Box
       as="section"
-      className="py-20 bg-gradient-to-b from-gbam-light to-white">
+      className="py-20 bg-gradient-to-b from-gbam-light to-white px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading

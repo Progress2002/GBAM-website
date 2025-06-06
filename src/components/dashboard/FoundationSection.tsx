@@ -9,7 +9,7 @@ const communityOutreachImages = [Image1, Image2, Image3, Image4];
 
 const FoundationSection = () => {
   return (
-    <Box as="section" className="py-20 bg-white">
+    <Box as="section" className="py-20 bg-white px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading
@@ -26,8 +26,8 @@ const FoundationSection = () => {
         </Box>
 
         <Box className="bg-gbam-light rounded-xl overflow-hidden">
-          <Box className="flex flex-col-reverse md:flex-row items-center">
-            <Box className="md:w-1/2 p-8 md:p-12">
+          <Box className="flex flex-col-reverse justify-between gap-10 md:gap-20 md:flex-row items-center">
+            <Box className="md:w-1/2 ">
               <Box className="flex items-center mb-6">
                 <Heading as="h3" className="!text-2xl font-bold text-gbam-dark">
                   <span className="text-gbam-primary">#</span>GBAM x UNICEF
@@ -35,14 +35,14 @@ const FoundationSection = () => {
                 </Heading>
               </Box>
 
-              <p className="text-gbam-dark/80 mb-6">
+              <Text className="text-gbam-dark/80 mb-6">
                 A landmark initiative that vaccinated over 11,000 youths across
                 Kaduna's tertiary institutions. By fusing entertainment and
                 public health, this program exemplified the power of
                 community-driven change.
-              </p>
+              </Text>
 
-              <Box className="bg-white rounded-lg p-6 shadow-md my-6">
+              <Box className="bg-white rounded-xl p-6 shadow-md my-6">
                 <Heading
                   as="h4"
                   mb={3}

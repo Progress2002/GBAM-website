@@ -41,7 +41,7 @@ const teamInAction = [
 
 const TeamSection = () => {
   return (
-    <section className="py-20 bg-gbam-dark text-white">
+    <section className="py-20 bg-gbam-dark text-white px-4 lg:px-8">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Heading

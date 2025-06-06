@@ -12,7 +12,7 @@ import ArenaImg from "@/assets/images/arena.webp";
 
 const MembershipSection = () => {
   return (
-    <Box as="section" className="py-20 bg-white">
+    <Box as="section" className="py-20 bg-white px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading
@@ -30,14 +30,14 @@ const MembershipSection = () => {
 
         <Box className="bg-gradient-to-br from-gbam-dark to-gbam-secondary rounded-2xl overflow-hidden shadow-2xl">
           <Box className="md:flex">
-            <Box className="md:w-1/2  h-[450px]">
+            <Box className="md:w-1/2  h-[450px] overflow-hidden">
               <img
                 src={ArenaImg}
                 alt="#GBAM Arena"
-                className="w-full !h-full  !object-cover !object-top "
+                className="w-full !h-full  !object-cover !object-top transform hover:scale-110 transition-transform duration-500"
               />
             </Box>
-            <Flex  align="center" className="md:w-1/2 p-8 md:p-12">
+            <Flex align="center" className="md:w-1/2 p-8 md:p-12">
               <Box>
                 <Heading
                   as="h3"

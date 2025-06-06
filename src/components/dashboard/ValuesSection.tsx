@@ -25,7 +25,7 @@ const ValueCard: React.FC<ValueCardProps> = ({ title, description, icon }) => (
 
 const ValuesSection = () => {
   return (
-    <section className="py-20 bg-gbam-light">
+    <section className="py-20 bg-gbam-light px-4 lg:px-8">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Heading as="h2" mb={4} className="!text-4xl md:!text-5xl font-bold  font-display">
