@@ -19,13 +19,13 @@ const FoundationSection = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Foundation
           </Heading>
-          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
             Making a difference in communities through outreach initiatives and
             partnerships
           </Text>
         </Box>
 
-        <Box className="bg-gbam-light rounded-xl overflow-hidden shadow-xl">
+        <Box className="bg-gbam-light rounded-xl overflow-hidden">
           <Box className="flex flex-col-reverse md:flex-row items-center">
             <Box className="md:w-1/2 p-8 md:p-12">
               <Box className="flex items-center mb-6">
@@ -42,7 +42,7 @@ const FoundationSection = () => {
                 community-driven change.
               </p>
 
-              <Box className="bg-white rounded-lg p-6 shadow-md mb-6">
+              <Box className="bg-white rounded-lg p-6 shadow-md my-6">
                 <Heading
                   as="h4"
                   mb={3}
@@ -92,7 +92,7 @@ const FoundationSection = () => {
           </Box>
         </Box>
 
-        <Box className="mt-16 text-center"></Box>
+        {/* <Box className="mt-16 text-center"></Box> */}
       </Box>
     </Box>
   );

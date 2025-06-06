@@ -12,7 +12,7 @@ const AboutSection = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Story
           </Heading>
-          <Text className="text-gbam-dark/80 !max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 !max-w-3xl !mx-auto font-medium text-xl">
             From radio program to grassroots revolution — we're on a mission to
             unify and empower through basketball, arts, and music.
           </Text>
@@ -26,13 +26,13 @@ const AboutSection = () => {
               className="!text-2xl text-gbam-dark font-display">
               Our History
             </Heading>
-            <Text mb={4} className="text-gbam-dark/80">
+            <Text mb={4} fontWeight="medium" className="text-gbam-dark/80">
               Graffiti Entertainment Consultancy Ltd began in 2014 as a radio
               program providing premium lifestyle and entertainment content. It
               grew into a full-blown movement: #GBAM - Graffiti Basketball and
               Music.
             </Text>
-            <Text mb={6} className="text-gbam-dark/80">
+            <Text mb={6} fontWeight="medium" className="text-gbam-dark/80">
               Established to unify and empower, #GBAM bridges the gap between
               creativity, community, and capacity building through the dynamic
               fusion of sports, music, and the arts.
@@ -44,7 +44,7 @@ const AboutSection = () => {
               className="!text-2xl text-gbam-dark font-display">
               Our Mission
             </Heading>
-            <Text mb={6} className="text-gbam-dark/80 ">
+            <Text mb={6} fontWeight="medium" className="text-gbam-dark/80 ">
               To provide a dynamic, inclusive platform that integrates sports,
               culture, and social development—fostering youth engagement, unity,
               and holistic well-being.
@@ -56,7 +56,7 @@ const AboutSection = () => {
               className="!text-2xl  text-gbam-dark font-display">
               Our Vision
             </Heading>
-            <Text mb={6} className="text-gbam-dark/80 ">
+            <Text mb={6} fontWeight="medium" className="text-gbam-dark/80 ">
               To become Africa's leading grassroots movement combining
               basketball, music, and the arts as tools for social
               transformation, empowerment, and sustainable development.

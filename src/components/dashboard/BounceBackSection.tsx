@@ -16,7 +16,7 @@ const BounceBackSection = () => {
             className="text-4xl md:text-5xl font-bold  font-display">
             Bounce Back Initiative
           </Heading>
-          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 max-w-2xl !mx-auto font-medium text-xl">
             Empowering marginalized communities through basketball, nutrition,
             and creative arts
           </Text>

@@ -51,7 +51,7 @@ const TeamSection = () => {
             <span className="text-gbam-primary">#</span>
             <span>Team GBAM in Action</span>
           </Heading>
-          <Text mb={8} className="text-white/80 max-w-2xl !mx-auto">
+          <Text mb={8} className="text-white/80 max-w-2xl !mx-auto font-medium text-xl">
           We&apos;re a team of coaches, creatives, tech experts, mentors, and community builders. Together, we create impactful events, projects, and partnerships that empower young people.
           </Text>
         </div>

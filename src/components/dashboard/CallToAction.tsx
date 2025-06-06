@@ -8,7 +8,7 @@ const CallToAction = () => {
           <Heading as="h2" className="!text-4xl md:!text-5xl font-bold !mb-6 text-white font-display">
             Join the <span className="text-gbam-primary">#</span>GBAM Movement Today!
           </Heading>
-          <Text className="text-white/80 text-lg !mb-8">
+          <Text className="text-white/80  !mb-8 font-medium text-xl">
             Follow us, support us, grow with us. Be the first to hear about upcoming events, training programs, and opportunities to make a difference through basketball, music, and art.
           </Text>
           <Box className="flex flex-col sm:flex-row justify-center gap-4">

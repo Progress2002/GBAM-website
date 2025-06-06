@@ -49,7 +49,7 @@ const ChampionshipsSection = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Championships
           </Heading>
-          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
             Competitive basketball events that inspire teamwork, leadership, and
             community pride.
           </Text>

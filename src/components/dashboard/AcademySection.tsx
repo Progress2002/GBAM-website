@@ -13,7 +13,7 @@ const AcademySection = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Academy
           </Heading>
-          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
             Where talent meets transformation. Inclusive training programs for
             everyone.
           </Text>

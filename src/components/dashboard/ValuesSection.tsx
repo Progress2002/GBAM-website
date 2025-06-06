@@ -31,7 +31,7 @@ const ValuesSection = () => {
           <Heading as="h2" mb={4} className="!text-4xl md:!text-5xl font-bold  font-display">
             Our Core Values
           </Heading>
-          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
             The principles that guide everything we do at #GBAM
           </Text>
         </div>

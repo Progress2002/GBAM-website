@@ -50,7 +50,7 @@ const ImpactSection = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Impact
           </Heading>
-          <Text className="text-gbam-dark/80 !max-w-3xl !mx-auto text-lg">
+          <Text className="text-gbam-dark/80 !max-w-3xl !mx-auto font-medium text-xl">
             Making a difference through basketball, arts, and music across
             communities.
           </Text>

@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { FaArrowDown } from "react-icons/fa";
 
-import HeroImg from "@/assets/images/hero-img.avif";
+// import HeroImg from "@/assets/images/hero-img.avif";
+import HeroImg from "@/assets/images/hero.webp";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           style={{
             backgroundImage: `url(${HeroImg})`,
             backgroundBlendMode: "overlay",
-            filter: "brightness(0.4)",
+            filter: "brightness(0.3)",
           }}
         />
       </Box>
