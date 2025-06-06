@@ -2,7 +2,7 @@ import { Box, Text, Heading } from "@chakra-ui/react";
 
 const AboutSection = () => {
   return (
-    <Box as="section" id="about" className="py-20 bg-white">
+    <Box as="section" id="about" className="py-20 bg-white px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading

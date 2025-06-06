@@ -7,7 +7,7 @@ import BBIImage from "@/assets/images/BBI.webp";
 
 const BounceBackSection = () => {
   return (
-    <Box as="section" className="py-20 bg-gbam-light">
+    <Box as="section" className="py-20 bg-gbam-light px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading
@@ -22,7 +22,7 @@ const BounceBackSection = () => {
           </Text>
         </Box>
 
-        <Box className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <Box className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
           <Box className="order-2 md:order-1 ">
             <Heading
               as="h3"
@@ -31,7 +31,7 @@ const BounceBackSection = () => {
               More Than Just a Game
             </Heading>
 
-            <Text mb={6} className="text-gbam-dark/80">
+            <Text mb={6} maxW="xl" className="text-gbam-dark/80">
               Bounce Back is a comprehensive initiative that uses basketball as
               a tool for social change and community development. We reach out
               to under-resourced areas with a program that combines sports,
@@ -39,7 +39,7 @@ const BounceBackSection = () => {
             </Text>
 
             <Box className="grid grid-cols-1 md:grid-cols-2 gap-6 !mb-8">
-              <Box className="bg-white p-6 rounded-lg shadow-md">
+              <Box className="bg-white p-6 rounded-xl shadow-md">
                 <Box className="w-12 h-12 bg-gbam-primary rounded-full flex items-center justify-center text-white mb-4">
                   <PiPersonSimpleThrowFill size={25} />
                 </Box>
@@ -49,13 +49,13 @@ const BounceBackSection = () => {
                   className="!text-lg font-bold text-gbam-dark">
                   Basketball Clinics
                 </Heading>
-                <p className="text-gbam-dark/80">
+                <Text className="text-gbam-dark/80">
                   Weekly basketball challenges and skills development sessions
                   led by professional coaches.
-                </p>
+                </Text>
               </Box>
 
-              <Box className="bg-white p-6 rounded-lg shadow-md">
+              <Box className="bg-white p-6 rounded-xl shadow-md">
                 <Box className="w-12 h-12 bg-gbam-primary rounded-full flex items-center justify-center text-white mb-4">
                   <MdOutlineFastfood size={25} />
                 </Box>
@@ -71,7 +71,7 @@ const BounceBackSection = () => {
                 </Text>
               </Box>
 
-              <Box className="bg-white p-6 rounded-lg shadow-md">
+              <Box className="bg-white p-6 rounded-xl shadow-md">
                 <Box className="w-12 h-12 bg-gbam-primary rounded-full flex items-center justify-center text-white mb-4">
                   <LuPencil size={25} />
                 </Box>
@@ -87,7 +87,7 @@ const BounceBackSection = () => {
                 </Text>
               </Box>
 
-              <Box className="bg-white p-6 rounded-lg shadow-md">
+              <Box className="bg-white p-6 rounded-xl shadow-md">
                 <Box className="w-12 h-12 bg-gbam-primary rounded-full flex items-center justify-center text-white mb-4">
                   <IoBookOutline size={25} />
                 </Box>
@@ -97,10 +97,10 @@ const BounceBackSection = () => {
                   className="!text-lg font-bold text-gbam-dark">
                   Life Skills
                 </Heading>
-                <p className="text-gbam-dark/80">
+                <Text className="text-gbam-dark/80">
                   Workshops on teamwork, conflict resolution, and goal setting
                   that translate to success beyond sports.
-                </p>
+                </Text>
               </Box>
             </Box>
           </Box>
