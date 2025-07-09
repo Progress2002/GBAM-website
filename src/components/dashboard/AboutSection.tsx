@@ -8,7 +8,8 @@ const AboutSection = () => {
           <Heading
             as="h2"
             mb={4}
-            className="!text-4xl md:!text-5xl font-bold font-display">
+            className="!text-4xl md:!text-5xl font-bold font-display"
+          >
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Story
           </Heading>
@@ -19,29 +20,34 @@ const AboutSection = () => {
         </Box>
 
         <Box className="grid md:grid-cols-2 gap-12 items-center">
-          <Box className="order-2 md:order-1">
-            <Heading
-              mb={4}
-              as="h3"
-              className="!text-2xl text-gbam-dark font-display">
-              Our History
-            </Heading>
-            <Text mb={4} fontWeight="medium" className="text-gbam-dark/80">
-              Graffiti Entertainment Consultancy Ltd began in 2014 as a radio
-              program providing premium lifestyle and entertainment content. It
-              grew into a full-blown movement: #GBAM - Graffiti Basketball and
-              Music.
-            </Text>
-            <Text mb={6} fontWeight="medium" className="text-gbam-dark/80">
-              Established to unify and empower, #GBAM bridges the gap between
-              creativity, community, and capacity building through the dynamic
-              fusion of sports, music, and the arts.
-            </Text>
+          <Box className="order-2 h-full flex flex-col justify-between md:order-1">
+            <Box>
+              <Heading
+                mb={4}
+                as="h3"
+                className="!text-2xl text-gbam-dark font-display"
+              >
+                Our History
+              </Heading>
+              <Text mb={4} fontWeight="medium" className="text-gbam-dark/80">
+                Graffiti Entertainment Consultancy Ltd began in 2014 as a radio
+                program providing premium lifestyle and entertainment content.
+                It grew into a full-blown movement: #GBAM - Graffiti Basketball
+                and Music.
+              </Text>
+              <Text mb={6} fontWeight="medium" className="text-gbam-dark/80">
+                Established to unify and empower, #GBAM bridges the gap between
+                creativity, community, and capacity building through the dynamic
+                fusion of sports, music, and the arts.
+              </Text>
+            </Box>
 
-            <Heading
+            <Box>
+              <Heading
               as="h3"
               mb={4}
-              className="!text-2xl text-gbam-dark font-display">
+              className="!text-2xl text-gbam-dark font-display"
+            >
               Our Mission
             </Heading>
             <Text mb={6} fontWeight="medium" className="text-gbam-dark/80 ">
@@ -49,11 +55,14 @@ const AboutSection = () => {
               culture, and social development—fostering youth engagement, unity,
               and holistic well-being.
             </Text>
+            </Box>
 
-            <Heading
+            <Box>
+              <Heading
               as="h3"
               mb={4}
-              className="!text-2xl  text-gbam-dark font-display">
+              className="!text-2xl  text-gbam-dark font-display"
+            >
               Our Vision
             </Heading>
             <Text mb={6} fontWeight="medium" className="text-gbam-dark/80 ">
@@ -61,7 +70,7 @@ const AboutSection = () => {
               basketball, music, and the arts as tools for social
               transformation, empowerment, and sustainable development.
             </Text>
-
+            </Box>
             {/* <Button colorScheme="orange" >
               Learn More About Us
             </Button> */}
@@ -73,9 +82,9 @@ const AboutSection = () => {
               <img
                 src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
                 alt="Basketball team huddle"
-                className="rounded-lg shadow-xl relative z-10 max-h-[600px] w-full"
+                className="rounded-lg shadow-xl object-cover relative z-10 max-h-[600px] w-full"
               />
-              <Box className="absolute -right-4 -bottom-4 w-2/3 h-2/3 bg-gbam-secondary/20 rounded-lg"/>
+              <Box className="absolute -right-4 -bottom-4 w-2/3 h-2/3 bg-gbam-secondary/20 rounded-lg" />
             </Box>
           </Box>
         </Box>
