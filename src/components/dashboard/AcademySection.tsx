@@ -1,7 +1,10 @@
 import { Box, Button, Heading, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import Carousel from "../Carousel";
 
 const AcademySection = () => {
+  const navigate = useNavigate();
+
   return (
     <Box as="section" className="py-20 bg-white">
       <Box className="container mx-auto px-4">
@@ -39,11 +42,13 @@ const AcademySection = () => {
                 <Heading
                   as="h4"
                   mb={2}
-                  className="!text-xl font-bold text-gbam-primary flex items-center">
+                  className="!text-xl font-bold  text-gbam-primary flex items-center">
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     1
                   </span>
-                  Children
+                  <Text onClick={()=>navigate("/ChildrenSection")} className="hover:text-orange-700 cursor-pointer ">
+                    Children
+                  </Text>
                 </Heading>
                 <Text className="text-gbam-dark/80 pl-11">
                   Developing skills, confidence, and teamwork from an early age
