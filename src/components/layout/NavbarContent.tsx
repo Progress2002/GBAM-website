@@ -1,13 +1,26 @@
 import { Box, Button } from "@chakra-ui/react";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom"; 
+
 
 interface NavbarContentProps {
   closeMenu?: () => void;
 }
 
+
 const NavbarContent: React.FC<NavbarContentProps> = ({ closeMenu }) => {
+  const navigate = useNavigate()
+
   return (
     <Box className="flex flex-col space-y-4 font-medium   lg:flex-row lg:items-center lg:space-x-6  lg:space-y-0 ">
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        onClick={()=>navigate('/') && closeMenu}
+        className="!text-white hover:!text-gbam-primary transition-colors hover:cursor-pointer">
+        Home
+      </Link>
       <Link
         to="about"
         smooth={true}
@@ -55,6 +68,15 @@ const NavbarContent: React.FC<NavbarContentProps> = ({ closeMenu }) => {
         onClick={closeMenu}
         className="!text-white hover:!text-gbam-primary transition-colors hover:cursor-pointer">
         Bounce Back
+      </Link>
+
+      <Link
+        to="teamMembers"
+        smooth={true}
+        duration={500}
+        onClick={closeMenu}
+        className="!text-white hover:!text-gbam-primary transition-colors hover:cursor-pointer">
+        Team
       </Link>
 
       <Button colorScheme="orange" className="w-full lg:w-fit ">
