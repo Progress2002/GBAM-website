@@ -15,10 +15,10 @@ interface ImageGalleryProps {
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ title, description, images }) => {
   return (
-    <div className="container mx-auto px-4 bg-gbam-dark text-white py-16 pt-24">
+    <div className="container mx-auto px-4 bg-gbam-dark text-white py-16 ">
       <div className="py-8 text-center">
-        <h2 className="text-center py-2 !font-semibold !text-3xl">
-          <b className="text-gbam-primary text-3xl">#</b> {title}
+        <h2 className="text-center py-2 !font-semibold !text-4xl">
+          <b className="text-gbam-primary text-4xl">#</b> {title}
         </h2>
         <p>{description}</p>
       </div>

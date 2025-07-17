@@ -22,8 +22,8 @@ const BounceBackSection = () => {
           </Text>
         </Box>
 
-        <Box className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
-          <Box className="order-2 md:order-1 ">
+        <Box className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+          <Box className="order-2 lg:order-1 ">
             <Heading
               as="h3"
               mb={6}

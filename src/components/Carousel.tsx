@@ -107,6 +107,7 @@ const Carousel = ({ images = carouselImages, className }: CarouselProps) => {
                 <Box
                   as="img"
                   src={src}
+                  className="!object-cover !w-full !h-full"
                   alt={`Carousel image ${index + 1}`}
                   w="full"
                   shadow="lg"

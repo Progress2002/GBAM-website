@@ -1,8 +1,11 @@
-import { Box, Text, Heading } from "@chakra-ui/react";
+import { Box, Text, Heading, Button } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
   return (
-    <Box as="section" id="about" className="py-20 bg-white px-4 lg:px-8">
+    <Box as="section" id="about" className="pt-20 bg-white px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading
@@ -71,9 +74,9 @@ const AboutSection = () => {
               transformation, empowerment, and sustainable development.
             </Text>
             </Box>
-            {/* <Button colorScheme="orange" >
+             <Button onClick={()=>navigate("/LearnMore")} colorScheme="orange" >
               Learn More About Us
-            </Button> */}
+            </Button> 
           </Box>
 
           <Box className="order-1 md:order-2">

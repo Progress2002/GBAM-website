@@ -1,6 +1,7 @@
 import { Box, Button, Heading, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import Carousel from "../Carousel";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const AcademySection = () => {
   const navigate = useNavigate();
@@ -17,8 +18,9 @@ const AcademySection = () => {
             <span className="text-gbam-dark">GBAM</span> Academy
           </Heading>
           <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
-            Where talent meets transformation. Inclusive training programs for
-            everyone.
+            The #GBAM Academy is not a school in the traditional sense it is a laboratory of life. 
+A place where skills meet soul, and where instruction is fused with inspiration. Whether you're picking up a basketball, a microphone, or a paintbrush, here, you are entering a journey of becoming.
+We train more than athletes and artists we raise changemakers, leaders, and local legends.
           </Text>
         </Box>
 
@@ -46,8 +48,9 @@ const AcademySection = () => {
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     1
                   </span>
-                  <Text onClick={()=>navigate("/ChildrenSection")} className="hover:text-orange-700 cursor-pointer ">
+                  <Text onClick={()=>navigate("/ChildrenSection")} className="hover:text-orange-700 flex items-center gap-4 cursor-pointer ">
                     Children
+                    <FaLocationArrow />
                   </Text>
                 </Heading>
                 <Text className="text-gbam-dark/80 pl-11">
@@ -64,7 +67,10 @@ const AcademySection = () => {
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     2
                   </span>
-                  Adults
+                  <Text onClick={()=>navigate("/Adult")} className="hover:text-orange-700 flex items-center gap-4 cursor-pointer ">
+                    Adult
+                    <FaLocationArrow />
+                  </Text>
                 </Heading>
                 <Text className="text-gbam-dark/80 pl-11">
                   Offering growth opportunities for aspiring professionals and
@@ -80,7 +86,10 @@ const AcademySection = () => {
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     3
                   </span>
-                  Persons Living with Disabilities
+                  <Text onClick={()=>navigate("/PersonswithDisabilities")} className="hover:text-orange-700 flex items-center gap-4 cursor-pointer ">
+                    Persons with Disabilities
+                    <FaLocationArrow />
+                  </Text>
                 </Heading>
                 <Text className="text-gbam-dark/80 pl-11">
                   Ensuring no one is left behind in the journey of

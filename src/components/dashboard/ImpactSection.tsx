@@ -5,6 +5,7 @@ import { BsPeople } from "react-icons/bs";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { SiSemanticscholar } from "react-icons/si";
 import { HiOutlineUserGroup } from "react-icons/hi";
+import { FaLocationArrow } from "react-icons/fa6";
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -95,6 +96,7 @@ const ImpactSection = () => {
             count={23}
             label="LGAs Collaborated With"
           />
+          
         </Box>
       </Box>
     </Box>
