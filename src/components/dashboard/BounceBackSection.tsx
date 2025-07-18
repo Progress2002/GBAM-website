@@ -7,7 +7,7 @@ import BBIImage from "@/assets/images/BBI.webp";
 
 const BounceBackSection = () => {
   return (
-    <Box as="section" className="py-20 bg-gbam-light px-4 lg:px-8">
+    <Box as="section" className="pb-10 bg-gbam-light px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading

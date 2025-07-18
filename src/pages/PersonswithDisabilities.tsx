@@ -27,7 +27,7 @@ const PersonsWithDisabilities: React.FC = () => {
       <Navbar />
       <IndividualPage
         title="GBAM program for Persons With Disabilities"
-        description="Ensuring no one is left behind in the journey of self-expression and achievement with adaptive programs and specialized coaching."
+        description="Ensuring no one is left behind in the journey of self-expression and achievement with adaptive programs and specialized coaching. We design access points for all, because greatness wears many forms."
         images={galleryImages}
       />
     </>

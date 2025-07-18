@@ -28,7 +28,7 @@ const TeamMembers: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 relative bg-gbam-dark text-white  ">
+    <div className="container mx-auto px-4 pb-8 relative">
       <div className="py-8 text-center">
         <h2 className="text-center py-2 !font-bold !text-4xl">
           <b className="text-gbam-primary font-bold text-3xl">#</b> GBAM Team Members
@@ -40,7 +40,7 @@ const TeamMembers: React.FC = () => {
         {galleryImages.map((image) => (
           <div
             key={image.id}
-            className="group relative overflow-hidden rounded-2xl h-[20rem]"
+            className="group relative overflow-hidden rounded-2xl h-[23rem] md:h-[25rem] lg:h-[27rem]"
           >
             <div className="h-full w-full overflow-hidden">
               <img

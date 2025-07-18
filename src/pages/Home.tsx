@@ -93,9 +93,6 @@ function Home() {
           <CallToAction />
         </Box>
       </Element>
-
-      {/* Footer */}
-      <Footer />
     </Box>
   );
 }

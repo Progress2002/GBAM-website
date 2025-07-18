@@ -12,7 +12,7 @@ import ArenaImg from "@/assets/images/arena.webp";
 
 const MembershipSection = () => {
   return (
-    <Box as="section" className="py-20 bg-white px-4 lg:px-8">
+    <Box as="section" className=" bg-white px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading

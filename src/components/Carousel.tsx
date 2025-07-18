@@ -93,7 +93,7 @@ const Carousel = ({ images = carouselImages, className }: CarouselProps) => {
           el: ".swiper-pagination",
         }}
         loop={true}
-        className="w-full h-64 sm:h-80 md:h-96">
+        className="w-full h-[24rem] md:h-[27rem] lg:h-[33rem]">
         {images.map((src, index) => (
           <SwiperSlide key={index}>
             <Box position="relative" w="full" h="full" borderRadius="lg">

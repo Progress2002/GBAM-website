@@ -89,7 +89,7 @@ function LearnMore() {
           </div>
         </section>
         <section className="px-4 mb-12">
-          <h2 className="text-center !font-semibold !mt-12 !text-3xl py-4">
+          <h2 className="text-center !font-bold !mt-12 pb-8 !text-3xl py-4">
             From Airwaves to Arenas. From Talk to Transformation.
           </h2>
           <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8">
@@ -149,7 +149,6 @@ function LearnMore() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }
