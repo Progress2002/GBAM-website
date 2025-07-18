@@ -13,7 +13,6 @@ import MembershipSection from "@/components/dashboard/MembershipSection";
 import FoundationSection from "@/components/dashboard/FoundationSection";
 import BounceBackSection from "@/components/dashboard/BounceBackSection";
 import CallToAction from "@/components/dashboard/CallToAction";
-import Footer from "@/components/layout/Footer";
 import { Element } from "react-scroll";
 import TeamMembers from "@/components/dashboard/TeamMembers";
 

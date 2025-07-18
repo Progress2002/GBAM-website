@@ -14,8 +14,6 @@ import image10 from "../assets/images/radio/image10.webp";
 import image11 from "../assets/images/radio/image11.webp";
 import image12 from "../assets/images/radio/image12.webp";
 import image13 from "../assets/images/radio/image13.webp";
-import Footer from "@/components/layout/Footer";
-
 import imagea from "../../src/assets/images/colaborations/image1.webp";
 import imageb from "../../src/assets/images/colaborations/image2.webp";
 import imagec from "../../src/assets/images/colaborations/image3.webp";
