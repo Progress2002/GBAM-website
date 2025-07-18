@@ -62,7 +62,7 @@ const ImpactSection = () => {
             icon={<BsPeople size={50} className="text-orange-500 font-bold" />}
             count={50000}
             suffix="+"
-            label="People Engaged"
+            label="Lives Touched"
           />
           <StatCard
             icon={
@@ -82,7 +82,7 @@ const ImpactSection = () => {
                 className="text-orange-500 font-bold"
               />
             }
-            count={100}
+            count={50}
             suffix="+"
             label="Scholarships Awarded"
           />

@@ -33,7 +33,8 @@ const TeamMembers: React.FC = () => {
         <h2 className="text-center py-2 !font-bold !text-4xl">
           <b className="text-gbam-primary font-bold text-3xl">#</b> GBAM Team Members
         </h2>
-        <p>These are the current GbAM team members now</p>
+        <p>#GBAM is not just making noise, we're moving needles.
+Meet the #GBAM Team</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
