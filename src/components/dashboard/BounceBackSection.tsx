@@ -7,7 +7,7 @@ import BBIImage from "@/assets/images/BBI.webp";
 
 const BounceBackSection = () => {
   return (
-    <Box as="section" className="py-20 bg-gbam-light px-4 lg:px-8">
+    <Box as="section" className="pb-10 bg-gbam-light px-4 lg:px-8">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading
@@ -22,8 +22,8 @@ const BounceBackSection = () => {
           </Text>
         </Box>
 
-        <Box className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
-          <Box className="order-2 md:order-1 ">
+        <Box className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+          <Box className="order-2 lg:order-1 ">
             <Heading
               as="h3"
               mb={6}

@@ -13,8 +13,8 @@ import MembershipSection from "@/components/dashboard/MembershipSection";
 import FoundationSection from "@/components/dashboard/FoundationSection";
 import BounceBackSection from "@/components/dashboard/BounceBackSection";
 import CallToAction from "@/components/dashboard/CallToAction";
-import Footer from "@/components/layout/Footer";
 import { Element } from "react-scroll";
+import TeamMembers from "@/components/dashboard/TeamMembers";
 
 function Home() {
   return (
@@ -79,6 +79,12 @@ function Home() {
         </Box>
       </Element>
 
+
+      <Element name="team">
+        <Box as="section" id="teamMembers">
+          <TeamMembers />
+        </Box>
+      </Element>
       {/* Call to Action */}
 
       <Element name="join">
@@ -86,9 +92,6 @@ function Home() {
           <CallToAction />
         </Box>
       </Element>
-
-      {/* Footer */}
-      <Footer />
     </Box>
   );
 }

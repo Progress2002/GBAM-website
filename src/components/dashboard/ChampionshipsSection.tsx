@@ -1,4 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import localGov from "../../assets/images/championship/JABI0283.webp"
+import secSchool from "../../assets/images/championship/IMG_5567.webp"
+import Adult from "../../assets/images/championship/competition3.webp"
 
 interface ChampionshipCardProps {
   title: string;
@@ -58,22 +61,20 @@ const ChampionshipsSection = () => {
         <Box className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ChampionshipCard
             title="Secondary Schools Championship"
-            description="Showcasing young talent from across Kaduna in an engaging male and female basketball competition."
-            image="https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-            buttonText="School Registration"
-          />
+            description="Young kings and queens taking their first shot at greatness through teamwork, leadership, and fun."
+            image={secSchool} buttonText={""}          />
 
           <ChampionshipCard
             title="Adult Championship"
             description="A dynamic tournament for men and women at tertiary and professional levels fostering competition and connection."
-            image="https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+            image={Adult}
             buttonText="Team Registration"
           />
 
           <ChampionshipCard
             title="Inter-LGA Adult Championships"
-            description="Bringing local governments together in a powerful show of sportsmanship, unity, and cultural celebration."
-            image="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            description="Local governments battle not with bitterness but with brilliance showcasing culture, talent, and the strength of collective spirit."
+            image={localGov}
             buttonText="LGA Registration"
           />
         </Box>

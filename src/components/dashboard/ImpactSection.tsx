@@ -6,6 +6,7 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 import { SiSemanticscholar } from "react-icons/si";
 import { HiOutlineUserGroup } from "react-icons/hi";
 
+
 interface StatCardProps {
   icon: React.ReactNode;
   count: number;
@@ -61,7 +62,7 @@ const ImpactSection = () => {
             icon={<BsPeople size={50} className="text-orange-500 font-bold" />}
             count={50000}
             suffix="+"
-            label="People Engaged"
+            label="Lives Touched"
           />
           <StatCard
             icon={
@@ -81,7 +82,7 @@ const ImpactSection = () => {
                 className="text-orange-500 font-bold"
               />
             }
-            count={100}
+            count={50}
             suffix="+"
             label="Scholarships Awarded"
           />
@@ -95,6 +96,7 @@ const ImpactSection = () => {
             count={23}
             label="LGAs Collaborated With"
           />
+          
         </Box>
       </Box>
     </Box>
