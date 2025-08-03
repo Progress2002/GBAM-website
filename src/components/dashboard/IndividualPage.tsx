@@ -20,7 +20,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ title, description, images 
         <h2 className="text-center py-2 !font-semibold !text-4xl">
           <b className="text-gbam-primary text-4xl">#</b> {title}
         </h2>
-        <p className="!text-[1.1rem]">{description}</p>
+        <p className="!text-[1rem]">{description}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
