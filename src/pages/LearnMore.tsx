@@ -50,6 +50,7 @@ function LearnMore() {
     image13,
   ];
 
+
   return (
     <>
       <Navbar />
