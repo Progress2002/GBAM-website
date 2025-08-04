@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
@@ -8,10 +8,22 @@ import NavbarContent from "./NavbarContent";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+    const navRef = useRef<HTMLElement>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const closeMenu = () => setIsOpen(false);
+
+  useEffect(() => {
+  function handleClickOutside(e: MouseEvent) {
+    if (isOpen && navRef.current && !navRef.current.contains(e.target as Node )) {
+      setIsOpen(false);
+    }
+  }
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => document.removeEventListener("mousedown", handleClickOutside);
+}, [isOpen]);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +39,7 @@ const Navbar = () => {
 
   return (
     <nav
+    ref={navRef}
       className={cn(
         "fixed w-full z-50 transition-all duration-300 ",
         isScrolled || isOpen
