@@ -17,7 +17,7 @@ const AcademySection = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Academy
           </Heading>
-          <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
+          <Text className="text-gbam-dark/80  !mx-auto font-medium text-xl">
             The #GBAM Academy is not a school in the traditional sense it is a laboratory of life. 
 A place where skills meet soul, and where instruction is fused with inspiration. Whether you're picking up a basketball, a microphone, or a paintbrush, here, you are entering a journey of becoming.
 We train more than athletes and artists we raise changemakers, leaders, and local legends.
@@ -99,7 +99,8 @@ We train more than athletes and artists we raise changemakers, leaders, and loca
               </Box>
 
               <Button colorScheme="orange" mb={4}>
-                Apply for Academy
+                <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform">Apply for Academy</a>
+                
               </Button>
             </Box>
           </Box>

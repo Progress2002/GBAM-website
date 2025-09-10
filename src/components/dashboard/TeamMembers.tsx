@@ -13,18 +13,18 @@ import Zailani from "../../assets/images/teamMembers/Zailani-AJ-Musa-CSO.webp";
 
 const TeamMembers: React.FC = () => {
   const galleryImages = [
-    { id: 9, src: Murpheus, name:"Morpheus Major-Idoko", title: "Founder/CEO", alt: "Murpheus Major-Idoko" },
-    { id: 10, src: Mayowa, name:"Mayowa Kilanko", title: "Head of Media", alt: "Mayowa Kilanko" },
-    { id: 6, src: Janet, name:"Janet Gapsiso", title: "Head of Legal", alt: "Janet Gapsiso" },
-    { id: 4, src: Ehie, name:"Ehie Major-Attah", title: "Head of Finance/Accounts", alt: "Ehie Major-Attah" },
+    { id: 9, src: Murpheus, name:"Murpheus Major-Idoko", title: "Founder/CEO", alt: "Murpheus Major-Idoko" },
     { id: 5, src: Elsie, name:"Elsie Major-Idoko", title: "Admin/HR", alt: "Elsie Major-Idoko" },
-    { id: 7, src: Grace, name:"Grace John", title: "Academy Manager", alt: "Grace John" },
-    { id: 8, src: Mercy, name:"Mercy Ofuya", title: "welfare", alt: "Mercy Ofuya" },
-    { id: 1, src: Dagana, name:"Dagana Ndakotsu", title: "Head of Logistics.", alt: "Dagana Ndakotsu" },
-    { id: 2, src: Daniel, name:"Daniel Erbe Jonahn", title: "Head of Basketball", alt: "Daniel Erbe Jonahn" },
     { id: 3, src: Didam, name:"Didam Iliya", title: "Creative Director ", alt: "Didam Iliya" },
-    { id: 12, src: Samuel, name:"Samuel Ajowgu", title: "Head of Operations", alt: "Samuel Ajowgu" },
+    { id: 2, src: Daniel, name:"Daniel Erbe Jonahn", title: "Head of Basketball", alt: "Daniel Erbe Jonahn" },
+    { id: 7, src: Grace, name:"Grace John", title: "Academy Manager", alt: "Grace John" },
+    { id: 1, src: Dagana, name:"Dagana Ndakotsu", title: "Head of Logistics.", alt: "Dagana Ndakotsu" }, 
+    { id: 6, src: Janet, name:"Janet Gapsiso", title: "Head of Legal", alt: "Janet Gapsiso" }, 
+    { id: 4, src: Ehie, name:"Ehie Major-Attah", title: "Head of Finance/Accounts", alt: "Ehie Major-Attah" },
+    { id: 12, src: Samuel, name:"Samuel Ajowgu", title: "Head of Operations", alt: "Samuel Ajowgu" },  
     { id: 11, src: Zailani, name:"Zailani AJ Musa", title: "Chief Security Officer", alt: "Zailani AJ Musa" },
+    { id: 10, src: Mayowa, name:"Mayowa Kilanko", title: "Head of Media", alt: "Mayowa Kilanko" },
+    { id: 8, src: Mercy, name:"Mercy Ofuya", title: "Head of welfare", alt: "Mercy Ofuya" },
   ];
 
   return (

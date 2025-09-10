@@ -1,5 +1,6 @@
 import { Box, Text, Heading, Button } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import aboutPic from '../../assets/images/aboutPic.webp'
 
 const AboutSection = () => {
   const navigate = useNavigate();
@@ -83,7 +84,7 @@ const AboutSection = () => {
             <Box className="relative">
               <Box className="absolute -left-4 -top-4 w-2/3 h-2/3 bg-gbam-primary/20 rounded-lg" />
               <img
-                src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                src={aboutPic}
                 alt="Basketball team huddle"
                 className="rounded-lg shadow-xl object-cover relative z-10 max-h-[600px] w-full"
               />

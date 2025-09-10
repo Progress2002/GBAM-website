@@ -23,8 +23,8 @@ const MembershipSection = () => {
             <span className="text-gbam-dark">GBAM</span> Membership
           </Heading>
           <Text className="text-gbam-dark/80 max-w-3xl !mx-auto font-medium text-xl">
-            Join the #GBAM family and gain access to exclusive benefits and
-            opportunities
+           The #GBAM arena is a multi-purpose, youth-centered facility combining two basketball courts and a creative studio. A true hub for sports, creativity, and innovation providing a structured environment for talent development, community engagement, and
+social enterprise.
           </Text>
         </Box>
 
@@ -86,7 +86,7 @@ const MembershipSection = () => {
           <Text
             fontWeight="medium"
             className="text-gbam-dark/80 max-w-3xl !mx-auto mb-6">
-            Whether you're an athlete, artist, or enthusiast—membership is your
+            Whether you're an athlete, artist, or enthusiast membership is your
             gateway to growth and greatness. Join the #GBAM community today!
           </Text>
         </Box>

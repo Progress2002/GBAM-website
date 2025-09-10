@@ -35,7 +35,7 @@ const Footer = () => {
               </Link>
             </Box>
             <Text className="text-white/70 !mb-4">
-              Graffiti Basketball, Arts, and Music - unifying communities
+              Graffiti Basketball, and Music - unifying communities
               through sports and creativity since 2014.
             </Text>
             <Flex className="space-x-4 mt-4">
@@ -178,7 +178,8 @@ const Footer = () => {
             <UnorderedList className="space-y-2">
               <ListItem className="flex items-start">
                 <IoLocationOutline className="size-5 mr-2 mt-1 text-gbam-yellow" />
-                <span className="text-white/70">Kaduna, Nigeria</span>
+               
+                <a className="text-white/70" target="blank" href="maps.app.goo.gl/8VjXGNfx254N7bhs8?g_st=ipc">Kaduna, Nigeria</a>
               </ListItem>
               <ListItem className="flex items-start">
                 <FaFacebook className="size-5 mr-2 mt-1 text-gbam-yellow" />
@@ -195,7 +196,7 @@ const Footer = () => {
               <ListItem className="flex items-start">
                 <LuPhone className="size-5 mr-2 mt-1 text-gbam-yellow" />
                 <span className="text-white/70">
-                  +234 80 827 777 11 or +234 70 358 679 97
+                  +234 80 551 549 70 or +234 70 358 679 97
                 </span>
               </ListItem>
             </UnorderedList>
@@ -204,7 +205,7 @@ const Footer = () => {
 
         <Box className="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} #GBAM - Graffiti Basketball, Arts,
+            &copy; {new Date().getFullYear()} #GBAM - Graffiti Basketball,
             and Music. All rights reserved.
           </p>
         </Box>

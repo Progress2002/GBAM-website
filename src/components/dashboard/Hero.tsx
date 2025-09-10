@@ -20,7 +20,7 @@ const Hero = () => {
       </Box>
 
       {/* Content */}
-      <Box className="relative h-full container mx-aut0 flex flex-col justify-center md:items-center  px-4 lg:px-8">
+      <Box className="relative h-full container mx-auto flex flex-col justify-center md:items-center  px-4 lg:px-8">
         <Box className="max-w-3xl ">
           <Heading
             as="h1"
