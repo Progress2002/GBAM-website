@@ -22,6 +22,9 @@ import imagee from "../../src/assets/images/colaborations/image5.webp";
 import imagef from "../../src/assets/images/colaborations/image6.webp";
 import imageg from "../../src/assets/images/colaborations/image7.webp";
 import imageh from "../../src/assets/images/colaborations/image8.webp";
+import imagei from "../../src/assets/images/colaborations/image9.webp";
+import imagej from "../../src/assets/images/colaborations/image10.webp";
+import imagek from "../../src/assets/images/colaborations/image11.webp";
 
 function LearnMore() {
   const Images = [
@@ -33,6 +36,9 @@ function LearnMore() {
     { id: 6, src: imagef, alt: "" },
     { id: 7, src: imageg, alt: "" },
     { id: 8, src: imageh, alt: "" },
+    { id: 9, src: imagei, alt: "" },
+    { id: 10, src: imagej, alt: "" },
+    { id: 11, src: imagek, alt: "" },
   ];
   const carouselImages = [
     image1,
@@ -62,7 +68,7 @@ function LearnMore() {
             Basketball and Music{" "}
           </h2>
           <div className="flex flex-col md:mt-8 md:grid grid-cols-2 gap-8 px-4">
-            <p className="lg:text-[1.3rem] !h-full">
+              <p className="lg:text-[1.3rem] !h-full">
               A canvas of dreams, a court of purpose, a stage for change. In a
               world where lines are drawn to divide, #GBAM uses them to design.
               We are the convergence of rhythm, rivalry, and revolution a
@@ -76,10 +82,12 @@ function LearnMore() {
               global relevance. Innovation. Impact. Identity.This is #GBAM where
               culture competes, and community wins.
             </p>
-            <div className="relative">
+
+            
+            <div className="relative md:h-[28rem]">
               <div className="absolute -left-4 -top-2 w-full h-full bg-gbam-primary/20 rounded-lg transform rotate-1"></div>
               <img
-                className="relative !h-full w-full object-cover z-10"
+                className="relative !h-full !w-full !object-cover z-10"
                 src={abtPic}
                 alt=""
               />
@@ -87,8 +95,8 @@ function LearnMore() {
             </div>
           </div>
         </section>
-        <section className="px-4 mb-12">
-          <h2 className="text-center !font-bold !mt-12 pb-8 !text-3xl py-4">
+        <section className="px-4 ">
+          <h2 className="text-center !font-semibold md:!text-4xl pb-8 !text-3xl py-4">
             From Airwaves to Arenas. From Talk to Transformation.
           </h2>
           <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8">

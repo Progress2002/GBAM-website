@@ -13,22 +13,23 @@ import Zailani from "../../assets/images/teamMembers/Zailani-AJ-Musa-CSO.webp";
 
 const TeamMembers: React.FC = () => {
   const galleryImages = [
-    { id: 9, src: Murpheus, name:"Morpheus Major-Idoko", title: "Founder/CEO", alt: "Murpheus Major-Idoko" },
-    { id: 10, src: Mayowa, name:"Mayowa Kilanko", title: "Head of Media", alt: "Mayowa Kilanko" },
-    { id: 6, src: Janet, name:"Janet Gapsiso", title: "Head of Legal", alt: "Janet Gapsiso" },
-    { id: 4, src: Ehie, name:"Ehie Major-Attah", title: "Head of Finance/Accounts", alt: "Ehie Major-Attah" },
+    { id: 9, src: Murpheus, name:"Murpheus Major-Idoko", title: "Founder/CEO", alt: "Murpheus Major-Idoko" },
     { id: 5, src: Elsie, name:"Elsie Major-Idoko", title: "Admin/HR", alt: "Elsie Major-Idoko" },
-    { id: 7, src: Grace, name:"Grace John", title: "Academy Manager", alt: "Grace John" },
-    { id: 8, src: Mercy, name:"Mercy Ofuya", title: "welfare", alt: "Mercy Ofuya" },
-    { id: 1, src: Dagana, name:"Dagana Ndakotsu", title: "Head of Logistics.", alt: "Dagana Ndakotsu" },
-    { id: 2, src: Daniel, name:"Daniel Erbe Jonahn", title: "Head of Basketball", alt: "Daniel Erbe Jonahn" },
     { id: 3, src: Didam, name:"Didam Iliya", title: "Creative Director ", alt: "Didam Iliya" },
-    { id: 12, src: Samuel, name:"Samuel Ajowgu", title: "Head of Operations", alt: "Samuel Ajowgu" },
+    { id: 2, src: Daniel, name:"Daniel Erbe Jonahn", title: "Head of Basketball", alt: "Daniel Erbe Jonahn" },
+    { id: 7, src: Grace, name:"Grace John", title: "Academy Manager", alt: "Grace John" },
+    { id: 1, src: Dagana, name:"Dagana Ndakotsu", title: "Head of Logistics", alt: "Dagana Ndakotsu" }, 
+    { id: 6, src: Janet, name:"Janet Gapsiso", title: "Head of Legal", alt: "Janet Gapsiso" }, 
+    { id: 4, src: Ehie, name:"Ehie Major-Attah", title: "Head of Finance/Accounts", alt: "Ehie Major-Attah" },
+    { id: 12, src: Samuel, name:"Samuel Ajowgu", title: "Head of Operations", alt: "Samuel Ajowgu" },  
     { id: 11, src: Zailani, name:"Zailani AJ Musa", title: "Chief Security Officer", alt: "Zailani AJ Musa" },
+    { id: 10, src: Mayowa, name:"Mayowa Kilanko", title: "Head of Media", alt: "Mayowa Kilanko" },
+    { id: 8, src: Mercy, name:"Mercy Ofuya", title: "Head of welfare", alt: "Mercy Ofuya" },
   ];
 
   return (
-    <div className="container mx-auto px-4 pb-8 relative">
+    <div className="bg-gradient-to-br from-gray-50 to-gray-200">
+      <div className="container mx-auto px-4 md:px-10 pb-8 relative">
       <div className="py-8 text-center">
         <h2 className="text-center py-2 !font-bold !text-4xl">
           <b className="text-gbam-primary font-bold text-3xl">#</b> GBAM Team Members
@@ -37,25 +38,31 @@ const TeamMembers: React.FC = () => {
 Meet the #GBAM Team</p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
         {galleryImages.map((image) => (
           <div
             key={image.id}
-            className="group relative overflow-hidden rounded-2xl h-[23rem] md:h-[25rem] lg:h-[27rem]"
+            className="group relative overflow-hidden shadow-xl rounded-xl h-[23rem] md:h-[25rem] lg:h-[27rem]"
           >
             <div className="h-full w-full overflow-hidden">
               <img
                 src={image.src}
                 alt={image.alt || ""}
-                className="!w-full !h-full !object-cover transition-transform duration-300 group-hover:scale-110"
+                className="!w-full !h-full !object-cover !ease-in-out !duration-800 group-hover:scale-110"
               />
             </div>
-            <p className="absolute bottom-0 flex justify-center text-center text-[.9rem] bg-black/70 w-full text-white font-semibold text-lg">{image.name} <br /> {image.title}</p>
+            <div className="absolute py-4 text-black bottom-0 flex flex-col gap-2 justify-center text-center bg-white w-full">
+               <p className="font-semibold md:text-[1.2rem]" >{image.name} </p>
+               <p className="text-[.9rem] md:text-[1rem]">{image.title}</p>
+            </div>
+          
           </div>
           
         ))}
       </div>
     </div>
+    </div>
+    
   );
 };
 

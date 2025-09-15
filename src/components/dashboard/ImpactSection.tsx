@@ -1,11 +1,11 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import { BsPeople } from "react-icons/bs";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { SiSemanticscholar } from "react-icons/si";
 import { HiOutlineUserGroup } from "react-icons/hi";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -14,55 +14,57 @@ interface StatCardProps {
   suffix?: string;
 }
 
-const StatCard = ({ icon, count, label, suffix }: StatCardProps) => {
+const StatCard: React.FC<StatCardProps> = ({ icon, count, label, suffix }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+    <div
+      className="rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform hover:scale-105"
+      data-aos="fade-up"
+    >
       <div className="text-gbam-primary mb-4 text-4xl">{icon}</div>
       <CountUp end={count} duration={3} enableScrollSpy scrollSpyDelay={200}>
         {({ countUpRef }) => (
-          <Box
-            as="h2"
-            fontWeight="bold"
-            className="!text-4xl font-bold overflow-hidden">
+          <h2 className="!text-4xl font-bold overflow-hidden">
             <span ref={countUpRef} className="mr-[1px]" />
-            <span className="text-primary-500 font-bold">{suffix}</span>
-          </Box>
+            <span className="text-gbam-primary font-bold">{suffix}</span>
+          </h2>
         )}
       </CountUp>
 
-      <Text mt={3} fontWeight="medium" className="text-gbam-dark/80">
-        {label}
-      </Text>
+      <p className="mt-3 font-medium text-gbam-dark/80">{label}</p>
     </div>
   );
 };
 
-const ImpactSection = () => {
+const ImpactSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // animation duration
+      easing: "ease-in-out",
+      once: true, // animate only once
+      offset: 120, // trigger a bit before fully visible
+    });
+  }, []);
+
   return (
-    <Box
-      as="section"
-      className="py-20 bg-gradient-to-b from-gbam-light to-white px-4 lg:px-8">
-      <Box className="container mx-auto px-4">
-        <Box className="text-center mb-16">
-          <Heading
-            as="h2"
-            mb={4}
-            className="!text-4xl md:!text-5xl font-bold font-display">
+    <section className="py-20 bg-gradient-to-b from-gbam-light to-white px-4 lg:px-8">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="!text-4xl md:!text-5xl font-bold font-display">
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Impact
-          </Heading>
-          <Text className="text-gbam-dark/80 !max-w-3xl !mx-auto font-medium text-xl">
+          </h2>
+          <p className="text-gbam-dark/80 !max-w-3xl !mx-auto font-medium text-xl">
             Making a difference through basketball, arts, and music across
             communities.
-          </Text>
-        </Box>
+          </p>
+        </div>
 
-        <Box className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <StatCard
             icon={<BsPeople size={50} className="text-orange-500 font-bold" />}
             count={50000}
             suffix="+"
-            label="Lives Touched"
+            label="Word Reach"
           />
           <StatCard
             icon={
@@ -96,10 +98,9 @@ const ImpactSection = () => {
             count={23}
             label="LGAs Collaborated With"
           />
-          
-        </Box>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </section>
   );
 };
 

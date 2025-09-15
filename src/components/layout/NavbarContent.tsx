@@ -59,7 +59,7 @@ const NavbarContent: React.FC<NavbarContentProps> = ({ closeMenu }) => {
         duration={500}
         onClick={closeMenu}
         className="!text-white hover:!text-gbam-primary transition-colors hover:cursor-pointer">
-        Foundation
+        #GBAM Foundation
       </Link>
       <Link
         to="bounceback"
