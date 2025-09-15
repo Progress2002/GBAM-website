@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#home" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
               src="/gbam logo.png"
               alt="GBAM Logo"

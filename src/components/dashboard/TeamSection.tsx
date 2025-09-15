@@ -13,12 +13,15 @@ import merchendise2 from "../../assets/images/bb-coaching/marchendise2.webp";
 import merchendise3 from "../../assets/images/bb-coaching/marchendise3.webp";
 import merchendise4 from "../../assets/images/bb-coaching/marchendise4.webp";
 import merchendise5 from "../../assets/images/bb-coaching/marchendise5.webp";
+import merchendise6 from "../../assets/images/bb-coaching/merchendise6.webp";
+import merchendise7 from "../../assets/images/bb-coaching/merchendise7.webp";
 import teamCod1 from "../../assets/images/bb-coaching/team-cod1.webp";
 import teamCod2 from "../../assets/images/bb-coaching/team-cod2.webp";
 import teamCod3 from "../../assets/images/bb-coaching/team-cod3.webp";
 import teamCod4 from "../../assets/images/bb-coaching/team-cod4.webp";
 import teamCod5 from "../../assets/images/bb-coaching/team-cod5.webp";
 import teamCod6 from "../../assets/images/bb-coaching/team-cod6.webp";
+import teamCod7 from "../../assets/images/bb-coaching/team-cod7.webp";
 import competition1 from "../../assets/images/bb-coaching/competition1.webp";
 import competition2 from "../../assets/images/bb-coaching/competition2.webp";
 import competition3 from "../../assets/images/bb-coaching/competition3.webp";
@@ -43,11 +46,13 @@ const TeamCardsGrid = () => {
         merchendise3,
         merchendise4,
         merchendise5,
+        merchendise6,
+        merchendise7,
       ],
     },
     {
       title: "Team Coordination",
-      images: [teamCod1, teamCod2, teamCod3, teamCod4, teamCod5, teamCod6],
+      images: [teamCod1, teamCod2, teamCod3, teamCod4, teamCod5, teamCod6, teamCod7],
     },
     {
       title: "Tournament Coordination",
@@ -126,15 +131,19 @@ const TeamCard = ({ title, images }: TeamCardProps) => {
             key={index}
             className={`absolute inset-0 h-full w-full transition-all duration-1000 ease-in-out ${
               index === currentImageIndex
-                ? "transform translate-x-0 opacity-100"
-                : "transform -translate-x-full opacity-0"
+  ? "opacity-100 translate-x-0"
+  : "opacity-0 translate-x-0"
+
             }`}
           >
             <img
-              src={image}
-              alt={`${title}`}
-              className="w-full !h-full object-cover brightness-75 group-hover:brightness-90 block transition-all duration-700 group-hover:scale-110"
-            />
+  key={currentImageIndex}
+  src={images[currentImageIndex]}
+  alt={title}
+  loading={currentImageIndex === 0 ? "eager" : "lazy"}
+  className="w-full !h-full object-cover brightness-75 group-hover:brightness-90 block transition-all duration-700 group-hover:scale-110"
+/>
+
           </div>
         ))}
       </div>

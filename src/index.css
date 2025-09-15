@@ -8,3 +8,11 @@ html {
 body {
   overflow-x: hidden;
 }
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

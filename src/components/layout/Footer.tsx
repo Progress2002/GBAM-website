@@ -35,7 +35,7 @@ const Footer = () => {
               </Link>
             </Box>
             <Text className="text-white/70 !mb-4">
-              Graffiti Basketball, and Music - unifying communities
+              Graffiti Basketball, and Music, unifying communities
               through sports and creativity since 2014.
             </Text>
             <Flex className="space-x-4 mt-4">
