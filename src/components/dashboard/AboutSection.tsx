@@ -65,7 +65,7 @@ const AboutSection = () => {
               <p className="mb-4 font-medium text-gbam-dark/80">
                 Graffiti Entertainment Consultancy Ltd began in 2014 as a radio
                 program providing premium lifestyle and entertainment content.
-                It grew into a full-blown movement: #GBAM - Graffiti Basketball
+                It grew into a full blown movement: #GBAM - Graffiti Basketball
                 and Music.
               </p>
               <p className="!mb-6 font-medium text-gbam-dark/80">

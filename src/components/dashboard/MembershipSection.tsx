@@ -92,7 +92,7 @@ function MembershipSection() {
                 <div className="flex mt-4 flex-col md:flex-row gap-4">
                   {" "}
                   <button className="!text-white !font-semibold !rounded-l !rounded-r !rounded-lg !bg-[#DD6C21] !p-2">
-                    InBoxidual Membership
+                    Individual Membership
                   </button>{" "}
                   <button className="!border-1 !p-2 rounded-l rounded-r font-semibold !border-white">
                     Team Membership
